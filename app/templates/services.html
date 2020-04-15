@@ -1,0 +1,70 @@
+{% extends 'base.html'%}
+<!-- Styles block -->
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/services.css')}}">
+{% endblock %}
+{% block content %}
+<div class="jumbotron" style="background-image: url(https://images.unsplash.com/photo-1495524495561-e6f34fe3f445?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);width: 100%;height: 75vh;background-size: cover;background-repeat: no-repeat;margin-top: -70px;">
+    
+</div>
+<h2 class="text-center" style="font-family: 'Abril Fatface', cursive;margin-top: 60px;">Services</h2>
+<div class="container">
+    <h4 style="border-bottom: 1px solid teal;padding: 1px;"><span style="border-bottom: 3px solid rgb(6, 70, 70);">Photography</span></h4>
+    <div class="row">
+        <div class="col-md-3">
+          <p class="text-center">1</p>  
+        </div>
+        <div class="col-md-3">
+            <p class="text-center">2</p>
+        </div>
+        <div class="col-md-3">
+            <p class="text-center">3</p>
+        </div>
+        <div class="col-md-3">
+            <p class="text-center">4</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+          <p class="text-center">Industrial Photography</p>  
+        </div>
+        <div class="col-md-3">
+            <p class="text-center">Architectural Photography</p>
+        </div>
+        <div class="col-md-3">
+            <p class="text-center">Portrait</p>
+        </div>
+        <div class="col-md-3">
+            <p class="text-center">Advertising Photography</p>
+        </div>
+    </div>
+
+    <h4 style="border-bottom: 1px solid teal;padding: 1px;text-align: right;"><span style="border-bottom: 3px solid rgb(6, 70, 70);">Graphic Design</span></h4>
+    <div class="row">
+        <div class="col-md-4">
+          <p class="text-center">1</p>  
+        </div>
+        <div class="col-md-4">
+            <p class="text-center">2</p>
+        </div>
+        <div class="col-md-4">
+            <p class="text-center">3</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+          <p class="text-center">LOGO Desiging</p>  
+        </div>
+        <div class="col-md-4">
+            <p class="text-center">Designing brochures and flyers</p>
+        </div>
+        <div class="col-md-4">
+            <p class="text-center">Designing posters and book covers</p>
+        </div>
+    </div>
+</div>
+{% endblock%}

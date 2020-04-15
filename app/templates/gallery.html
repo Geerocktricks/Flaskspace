@@ -1,0 +1,66 @@
+{% extends 'base.html'%}
+<!-- Styles block -->
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/gallery.css')}}">
+{% endblock %}
+{% block content %}
+
+<h2 class="text-center" style="font-family: 'Abril Fatface', cursive;margin-top: 60px;">Gallery</h2>
+<div class="container" style="margin-top: 50px;">
+    <div class="row" style="margin-top: 40px;">
+        <div class="col-md-4">
+            <img src="https://images.unsplash.com/photo-1486597622250-f997d79907f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="cameras">
+            <h4 style="margin-top: 20px; font-weight: bold;">Cameras</h4>
+            <a href="" class="btn" style="background-color: teal;color: white;">Review</a>
+        </div>
+        <div class="col-md-4">
+            <img src="https://images.unsplash.com/photo-1460132011327-1bcd44f7ae20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="rail work">
+            <h4 style="margin-top: 20px;font-weight: bold">Rail Work</h4>
+            <a href="" class="btn" style="background-color: teal;color: white;">Review</a>
+        </div>
+        <div class="col-md-4">
+            <img src="https://images.unsplash.com/photo-1503424415636-eac9996b6046?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="care in action">
+            <h4 style="margin-top: 20px;font-weight: bold">Car in action</h4>
+            <a href="" class="btn" style="background-color: teal;color: white;">Review</a>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 40px;">
+        <div class="col-md-4">
+            <img src="https://images.unsplash.com/photo-1462926795244-b273f8a5454f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Starter pack">
+            <h4 style="margin-top: 20px; font-weight: bold;">Starter pack</h4>
+            <a href="" class="btn" style="background-color: teal;color: white;">Review</a>
+        </div>
+        <div class="col-md-4">
+            <img src="https://images.unsplash.com/photo-1534455700361-eca9c3dbc981?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Arial view">
+            <h4 style="margin-top: 20px;font-weight: bold">Arial View</h4>
+            <a href="" class="btn" style="background-color: teal;color: white;">Review</a>
+        </div>
+        <div class="col-md-4">
+            <img src="https://images.unsplash.com/photo-1490638114763-02630949efda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="care in action">
+            <h4 style="margin-top: 20px;font-weight: bold">DSLR</h4>
+            <a href="" class="btn" style="background-color: teal;color: white;">Review</a>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 40px;">
+        <div class="col-md-4">
+            <img src="https://images.unsplash.com/photo-1523286680734-c387ced73af5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Sundowner">
+            <h4 style="margin-top: 20px; font-weight: bold;">Sun-Downer</h4>
+            <a href="" class="btn" style="background-color: teal;color: white;">Review</a>
+        </div>
+        <div class="col-md-4">
+            <img src="https://images.unsplash.com/photo-1480365648051-7a3c9e97d56f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="B-balling">
+            <h4 style="margin-top: 20px;font-weight: bold">B-rolling</h4>
+            <a href="" class="btn" style="background-color: teal;color: white;">Review</a>
+        </div>
+        <div class="col-md-4">
+            <img src="https://images.unsplash.com/photo-1484346791885-776ca38ab7fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Focus">
+            <h4 style="margin-top: 20px;font-weight: bold">Focus</h4>
+            <a href="" class="btn" style="background-color: teal;color: white;">Review</a>
+        </div>
+    </div>
+</div>
+{% endblock%}
